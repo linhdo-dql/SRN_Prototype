@@ -40,10 +40,6 @@ QualitySettings:
     asyncUploadBufferSize: 4
     asyncUploadPersistentBuffer: 1
     resolutionScalingFixedDPIFactor: 1
-<<<<<<< HEAD
-=======
-    customRenderPipeline: {fileID: 0}
->>>>>>> 892d77b46b203896beb35757b7e6ffd7ccffc764
     excludedTargetPlatforms: []
   - serializedVersion: 2
     name: Fast
@@ -79,10 +75,6 @@ QualitySettings:
     asyncUploadBufferSize: 4
     asyncUploadPersistentBuffer: 1
     resolutionScalingFixedDPIFactor: 1
-<<<<<<< HEAD
-=======
-    customRenderPipeline: {fileID: 0}
->>>>>>> 892d77b46b203896beb35757b7e6ffd7ccffc764
     excludedTargetPlatforms: []
   - serializedVersion: 2
     name: Simple
@@ -118,10 +110,6 @@ QualitySettings:
     asyncUploadBufferSize: 4
     asyncUploadPersistentBuffer: 1
     resolutionScalingFixedDPIFactor: 1
-<<<<<<< HEAD
-=======
-    customRenderPipeline: {fileID: 0}
->>>>>>> 892d77b46b203896beb35757b7e6ffd7ccffc764
     excludedTargetPlatforms: []
   - serializedVersion: 2
     name: Good
@@ -157,10 +145,6 @@ QualitySettings:
     asyncUploadBufferSize: 4
     asyncUploadPersistentBuffer: 1
     resolutionScalingFixedDPIFactor: 1
-<<<<<<< HEAD
-=======
-    customRenderPipeline: {fileID: 0}
->>>>>>> 892d77b46b203896beb35757b7e6ffd7ccffc764
     excludedTargetPlatforms: []
   - serializedVersion: 2
     name: Beautiful
@@ -196,10 +180,6 @@ QualitySettings:
     asyncUploadBufferSize: 4
     asyncUploadPersistentBuffer: 1
     resolutionScalingFixedDPIFactor: 1
-<<<<<<< HEAD
-=======
-    customRenderPipeline: {fileID: 0}
->>>>>>> 892d77b46b203896beb35757b7e6ffd7ccffc764
     excludedTargetPlatforms: []
   - serializedVersion: 2
     name: Fantastic
@@ -235,10 +215,6 @@ QualitySettings:
     asyncUploadBufferSize: 4
     asyncUploadPersistentBuffer: 1
     resolutionScalingFixedDPIFactor: 1
-<<<<<<< HEAD
-=======
-    customRenderPipeline: {fileID: 0}
->>>>>>> 892d77b46b203896beb35757b7e6ffd7ccffc764
     excludedTargetPlatforms: []
   m_PerPlatformDefaultQuality:
     Android: 0
