@@ -19,6 +19,7 @@
       "source": "builtin",
       "dependencies": {}
     },
+<<<<<<< HEAD
     "com.unity.analytics": {
       "version": "3.3.5",
       "depth": 0,
@@ -28,6 +29,8 @@
       },
       "url": "https://packages.unity.com"
     },
+=======
+>>>>>>> 892d77b46b203896beb35757b7e6ffd7ccffc764
     "com.unity.cinemachine": {
       "version": "2.7.4",
       "depth": 0,
@@ -154,6 +157,7 @@
       },
       "url": "https://packages.unity.com"
     },
+<<<<<<< HEAD
     "com.unity.xr.legacyinputhelpers": {
       "version": "2.1.7",
       "depth": 0,
@@ -164,6 +168,8 @@
       },
       "url": "https://packages.unity.com"
     },
+=======
+>>>>>>> 892d77b46b203896beb35757b7e6ffd7ccffc764
     "com.unity.modules.ai": {
       "version": "1.0.0",
       "depth": 0,

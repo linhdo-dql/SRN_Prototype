@@ -3,7 +3,10 @@
     "com.unity.2d.pixel-perfect": "2.1.0",
     "com.unity.2d.sprite": "1.0.0",
     "com.unity.2d.tilemap": "1.0.0",
+<<<<<<< HEAD
     "com.unity.analytics": "3.3.5",
+=======
+>>>>>>> 892d77b46b203896beb35757b7e6ffd7ccffc764
     "com.unity.cinemachine": "2.7.4",
     "com.unity.collab-proxy": "1.17.2",
     "com.unity.ide.rider": "3.0.15",
@@ -15,7 +18,10 @@
     "com.unity.timeline": "1.7.1",
     "com.unity.ugui": "1.0.0",
     "com.unity.visualscripting": "1.7.8",
+<<<<<<< HEAD
     "com.unity.xr.legacyinputhelpers": "2.1.7",
+=======
+>>>>>>> 892d77b46b203896beb35757b7e6ffd7ccffc764
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.androidjni": "1.0.0",
     "com.unity.modules.animation": "1.0.0",
