@@ -281,11 +281,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentHealth: 0
+  TemporarilyInvulnerable: 0
+  PostDamageInvulnerable: 0
   InitialHealth: 100
   MaximumHealth: 100
   Invulnerable: 0
-  TemporarilyInvulnerable: 0
-  PostDamageInvulnerable: 0
   ImmuneToDamage: 0
   DamageFeedbacks: {fileID: 0}
   FeedbackIsProportionalToDamage: 0
@@ -324,6 +324,7 @@ MonoBehaviour:
   Bottom: 2
   Left: 1
   Right: 1
+  ResetForcesOnConstrain: 1
 --- !u!114 &8726451980377482402
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -411,6 +412,7 @@ MonoBehaviour:
   MinimumInputThreshold: 0.1
   FlipCharacterIfNeeded: 1
   AutoCorrectTrajectory: 1
+  DashDirectionMinThreshold: 0.1
   DashCooldown: 1
   LimitedDashes: 0
   SuccessiveDashAmount: 1
@@ -614,9 +616,12 @@ MonoBehaviour:
   BlockingMovementStates: 
   BlockingConditionStates: 
   WallJumpForce: {x: 10, y: 4}
-  ShouldReduceNumberOfJumpsLeft: 1
   ForceMode: 0
   ForceFlipTowardsDirection: 0
+  ShouldReduceNumberOfJumpsLeft: 1
+  LimitNumberOfWalljumps: 0
+  MaximumNumberOfWalljumps: 3
+  NumberOfWalljumpsLeft: 0
 --- !u!114 &8726451980377482326
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -654,6 +659,16 @@ MonoBehaviour:
   AbilityPermitted: 1
   BlockingMovementStates: 
   BlockingConditionStates: 
+  MuteSfxTrackSounds: 1
+  MuteUITrackSounds: 0
+  MuteMusicTrackSounds: 0
+  MuteMasterTrackSounds: 0
+  OnPause:
+    m_PersistentCalls:
+      m_Calls: []
+  OnUnpause:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &8726451980377482324
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -690,7 +705,8 @@ MonoBehaviour:
   AbilityPermitted: 1
   BlockingMovementStates: 
   BlockingConditionStates: 
-  InitialWeapon: {fileID: 0}
+  InitialWeapon: {fileID: 2073932159487376309, guid: 028f392df6c1c4aa5a6d834c7ae16f72,
+    type: 3}
   CanPickupWeapons: 1
   WeaponAttachment: {fileID: 0}
   ForceWeaponScaleResetOnEquip: 0
