@@ -116,7 +116,6 @@ GameObject:
   - component: {fileID: 3259667425575300121}
   - component: {fileID: 3259667425575300122}
   - component: {fileID: 3259667425575300123}
-  - component: {fileID: 5733461759099917418}
   m_Layer: 13
   m_Name: Enemy_F
   m_TagString: Untagged
@@ -819,27 +818,3 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 264448
   ResetPositionOnDeath: 1
---- !u!114 &5733461759099917418
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3259667425575300124}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50fc24513c89140afa90465a45f5d6fd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  KnockbackForce: {x: 0, y: 15}
-  DamageCausedKnockbackType: 1
-  DamagePerStomp: 10
-  ResetNumberOfJumpsOnStomp: 0
-  InvincibilityDuration: 0.5
-  PlayerMask:
-    serializedVersion: 2
-    m_Bits: 512
-  NumberOfRays: 5
-  RaycastLength: 0.5
-  RaycastVerticalOffset: 0.01
-  StomperMustBeAlive: 1
