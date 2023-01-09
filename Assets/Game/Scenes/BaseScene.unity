@@ -3258,6 +3258,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1057042317 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2536819268953604544, guid: ace2d4bf56f98df4196ff81845a465d7,
+    type: 3}
+  m_PrefabInstance: {fileID: 1695120963}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05ba674d9a1964c49b8c6e1d8a7d650d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1355967939
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3931,6 +3943,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1608921788 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 11469452, guid: ace2d4bf56f98df4196ff81845a465d7,
+    type: 3}
+  m_PrefabInstance: {fileID: 1695120963}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec0a7c5525d175b488e70c65147b06d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1622048324
 GameObject:
   m_ObjectHideFlags: 0
@@ -4111,6 +4135,94 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: df969c71e60bf244d9c78b9006579d7c,
         type: 3}
+    - target: {fileID: 11472170, guid: ace2d4bf56f98df4196ff81845a465d7, type: 3}
+      propertyPath: MouseMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11472170, guid: ace2d4bf56f98df4196ff81845a465d7, type: 3}
+      propertyPath: ButtonPressed.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11472170, guid: ace2d4bf56f98df4196ff81845a465d7, type: 3}
+      propertyPath: ButtonPressedFirstTime.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11472170, guid: ace2d4bf56f98df4196ff81845a465d7, type: 3}
+      propertyPath: ButtonPressed.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11472170, guid: ace2d4bf56f98df4196ff81845a465d7, type: 3}
+      propertyPath: ButtonPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1608921788}
+    - target: {fileID: 11472170, guid: ace2d4bf56f98df4196ff81845a465d7, type: 3}
+      propertyPath: ButtonPressed.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1057042317}
+    - target: {fileID: 11472170, guid: ace2d4bf56f98df4196ff81845a465d7, type: 3}
+      propertyPath: ButtonPressed.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11472170, guid: ace2d4bf56f98df4196ff81845a465d7, type: 3}
+      propertyPath: ButtonPressed.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ShootButtonPressed
+      objectReference: {fileID: 0}
+    - target: {fileID: 11472170, guid: ace2d4bf56f98df4196ff81845a465d7, type: 3}
+      propertyPath: ButtonPressed.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: ComboHit
+      objectReference: {fileID: 0}
+    - target: {fileID: 11472170, guid: ace2d4bf56f98df4196ff81845a465d7, type: 3}
+      propertyPath: ButtonPressedFirstTime.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11472170, guid: ace2d4bf56f98df4196ff81845a465d7, type: 3}
+      propertyPath: ButtonPressedFirstTime.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1057042317}
+    - target: {fileID: 11472170, guid: ace2d4bf56f98df4196ff81845a465d7, type: 3}
+      propertyPath: ButtonPressedFirstTime.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 11472170, guid: ace2d4bf56f98df4196ff81845a465d7, type: 3}
+      propertyPath: ButtonPressedFirstTime.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11472170, guid: ace2d4bf56f98df4196ff81845a465d7, type: 3}
+      propertyPath: ButtonPressedFirstTime.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ComboHit
+      objectReference: {fileID: 0}
+    - target: {fileID: 11472170, guid: ace2d4bf56f98df4196ff81845a465d7, type: 3}
+      propertyPath: ButtonPressedFirstTime.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 11472170, guid: ace2d4bf56f98df4196ff81845a465d7, type: 3}
+      propertyPath: ButtonPressed.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MoreMountains.CorgiEngine.InputManager, MoreMountains.CorgiEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 11472170, guid: ace2d4bf56f98df4196ff81845a465d7, type: 3}
+      propertyPath: ButtonPressed.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: MyAttackButton, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 11472170, guid: ace2d4bf56f98df4196ff81845a465d7, type: 3}
+      propertyPath: ButtonPressedFirstTime.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MyAttackButton, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 11472170, guid: ace2d4bf56f98df4196ff81845a465d7, type: 3}
+      propertyPath: ButtonPressedFirstTime.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: MyAttackButton, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 11472170, guid: ace2d4bf56f98df4196ff81845a465d7, type: 3}
+      propertyPath: ButtonPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 11472170, guid: ace2d4bf56f98df4196ff81845a465d7, type: 3}
+      propertyPath: ButtonPressed.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 11472170, guid: ace2d4bf56f98df4196ff81845a465d7, type: 3}
+      propertyPath: ButtonPressedFirstTime.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 11480108, guid: ace2d4bf56f98df4196ff81845a465d7, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -4126,6 +4238,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 553fa5730d515a94a87f18ee4dc92b4e,
         type: 3}
+    - target: {fileID: 22400022, guid: ace2d4bf56f98df4196ff81845a465d7, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 146
+      objectReference: {fileID: 0}
+    - target: {fileID: 22400022, guid: ace2d4bf56f98df4196ff81845a465d7, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -80
+      objectReference: {fileID: 0}
     - target: {fileID: 22401352, guid: ace2d4bf56f98df4196ff81845a465d7, type: 3}
       propertyPath: m_SizeDelta.x
       value: 1000
@@ -4282,6 +4402,37 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BgJoystick
+      objectReference: {fileID: 0}
+    - target: {fileID: 2536819268953604544, guid: ace2d4bf56f98df4196ff81845a465d7,
+        type: 3}
+      propertyPath: mainCharacter
+      value: 
+      objectReference: {fileID: 3040015048747061796, guid: 82b066112e73715408ef37191b84aff2,
+        type: 3}
+    - target: {fileID: 2536819268953604544, guid: ace2d4bf56f98df4196ff81845a465d7,
+        type: 3}
+      propertyPath: mainCharacterAnimator
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2536819268953604544, guid: ace2d4bf56f98df4196ff81845a465d7,
+        type: 3}
+      propertyPath: ButtonPressed.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2536819268953604544, guid: ace2d4bf56f98df4196ff81845a465d7,
+        type: 3}
+      propertyPath: ButtonPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2536819268953604544, guid: ace2d4bf56f98df4196ff81845a465d7,
+        type: 3}
+      propertyPath: ButtonPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 9100000, guid: cf5a56ed171d7114bbc20885ed876c87, type: 2}
+    - target: {fileID: 2536819268953604544, guid: ace2d4bf56f98df4196ff81845a465d7,
+        type: 3}
+      propertyPath: ButtonPressed.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3436484296934628568, guid: ace2d4bf56f98df4196ff81845a465d7,
         type: 3}

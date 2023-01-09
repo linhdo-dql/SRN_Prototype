@@ -2071,7 +2071,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 153.90002, y: -71.399994}
+  m_AnchoredPosition: {x: 153.90002, y: -71.400024}
   m_SizeDelta: {x: 301.84985, y: 144.82059}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &22242878
@@ -2205,6 +2205,7 @@ GameObject:
   - component: {fileID: 22570268}
   - component: {fileID: 11470656}
   - component: {fileID: 11472170}
+  - component: {fileID: 2536819268953604544}
   m_Layer: 0
   m_Name: ButtonRT
   m_TagString: Untagged
@@ -2360,6 +2361,19 @@ MonoBehaviour:
   DisabledAnimationParameterName: Disabled
   PressedAnimationParameterName: Pressed
   MouseMode: 0
+--- !u!114 &2536819268953604544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 185202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05ba674d9a1964c49b8c6e1d8a7d650d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCharacter: {fileID: 0}
 --- !u!1 &187238
 GameObject:
   m_ObjectHideFlags: 0
