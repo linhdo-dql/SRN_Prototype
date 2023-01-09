@@ -1,30 +1,21 @@
-using System.Numerics;
+using System.Collections.Generic;
 using Game.Scripts.DataModel;
-using Vector3 = UnityEngine.Vector3;
 
-public class EnemyModel
+public class EnemyModel : CharacterModel
 {
-    public enum TypeEnemy
+    public enum EnemyTypeEnum
     {
         Lancer,
         Greatsword,
         Gunship
     }
-    
-    public enum EnemyState
-    {
-        Idle,
-        Run,
-        Attack,
-        Death
-    }
 
-    public Power Power { get; set; }
-    
-    public TypeEnemy TypeOfEnemy { get; set; }
-    
-    public EnemyState StateOfEnemy { get; set; }
-    
-    public Vector3 InitPosition { get; set; }
-    public float Speed { get; set; }
+    private EnemyTypeEnum _type;
+
+    public EnemyModel(string id, string name, int level, Power power, List<OutfitModel> outfits,
+        CharacterStateEnum characterState, float speed, List<WeaponModel> weapons, EnemyTypeEnum type) : base(id, name,
+        level, power, outfits, characterState, speed, weapons)
+    {
+        _type = type;
+    }
 }
