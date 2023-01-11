@@ -11,11 +11,13 @@ public class EnemyModel : CharacterModel
     }
 
     private EnemyTypeEnum _type;
-
+    private int _turn;
+    public int Turn { get; set; }
     public EnemyModel(string id, string name, int level, Power power, List<OutfitModel> outfits,
-        CharacterStateEnum characterState, float speed, List<WeaponModel> weapons, EnemyTypeEnum type) : base(id, name,
-        level, power, outfits, characterState, speed, weapons)
+        CharacterStateEnum characterState, List<WeaponModel> weapons, EnemyTypeEnum type) : base(id, name,
+        level, power, outfits, characterState, weapons)
     {
-        _type = type;
+        this._type = type;
     }
+    
 }

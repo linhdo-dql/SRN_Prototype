@@ -1,9 +1,7 @@
-using System;
 using System.Collections.Generic;
 using Game.Scripts.DataModel;
 using MoreMountains.CorgiEngine;
 using UnityEngine;
-using UnityEngine.PlayerLoop;
 
 namespace Game.Scripts.Custom
 {
@@ -16,61 +14,56 @@ namespace Game.Scripts.Custom
         public Transform levelEnd;
         public GameObject parentEnemiesGo;
         public GameObject enemyPrefab;
+
         private void Start()
         {
-            // InitEnemies(FakeListEnemy());
+            InitEnemies(FakeListEnemy());
         }
 
-        // public void InitEnemies(List<EnemyModel> enemyModels)
-        // {
-        //     foreach (EnemyModel enemyModel in enemyModels)
-        //     {
-        //         Populate(enemyModel);
-        //     }
-        // }
+        private void InitEnemies(List<EnemyModel> enemyModels)
+        {
+            foreach (EnemyModel enemyModel in enemyModels)
+            {
+                Populate(enemyModel);
+            }
+        }
 
-        // private void Populate(EnemyModel e)
-        // {
-        //     Instantiate(enemyPrefab,e.InitPosition, Quaternion.identity, parentEnemiesGo.transform);
-        //     enemyPrefab.transform.position = e.InitPosition;
-        //     enemyPrefab.GetComponent<CharacterHorizontalMovement>().WalkSpeed = e.Speed;
-        // }
+        private void Populate(EnemyModel e)
+        {
+            Debug.Log(e.Turn);
+            Instantiate(enemyPrefab, SetPosition(e.Turn), Quaternion.identity, parentEnemiesGo.transform);
+            enemyPrefab.transform.localPosition = SetPosition(e.Turn) ;
+            enemyPrefab.GetComponent<CharacterHorizontalMovement>().WalkSpeed = e.Power.SpeedMovement;
+        }
 
-        // public List<EnemyModel> FakeListEnemy()
-        // {
-        //     List<EnemyModel> enemies = new List<EnemyModel>();
-        //     var position = levelStart.position;
-        //     var position1 = turn1Init.position;
-        //     var position2 = turn2Init.position;
-        //     var position3 = turn3Init.position;
-        //     var position4 = levelEnd.position;
-        //     enemies.Add(new EnemyModel() {Power = new Power(1,100, 50), InitPosition = position, StateOfEnemy = EnemyModel.EnemyState.Idle, TypeOfEnemy = EnemyModel.TypeEnemy.Greatsword, Speed = 5});
-        //     enemies.Add(new EnemyModel() {Power = new Power(1,100, 50), InitPosition = position, StateOfEnemy = EnemyModel.EnemyState.Idle, TypeOfEnemy = EnemyModel.TypeEnemy.Greatsword, Speed = 9});
-        //     enemies.Add(new EnemyModel() {Power = new Power(1,100, 50), InitPosition = position, StateOfEnemy = EnemyModel.EnemyState.Idle, TypeOfEnemy = EnemyModel.TypeEnemy.Greatsword, Speed = 6});
-        //     enemies.Add(new EnemyModel() {Power = new Power(1,100, 50), InitPosition = position, StateOfEnemy = EnemyModel.EnemyState.Idle, TypeOfEnemy = EnemyModel.TypeEnemy.Greatsword, Speed = 4});
-        //     enemies.Add(new EnemyModel() {Power = new Power(1,100, 50), InitPosition = position, StateOfEnemy = EnemyModel.EnemyState.Idle, TypeOfEnemy = EnemyModel.TypeEnemy.Greatsword, Speed = 8});
-        //     enemies.Add(new EnemyModel() {Power = new Power(1,100, 50), InitPosition = position, StateOfEnemy = EnemyModel.EnemyState.Idle, TypeOfEnemy = EnemyModel.TypeEnemy.Greatsword, Speed = 5});
-        //     enemies.Add(new EnemyModel() {Power = new Power(1,200, 50), InitPosition = position1, StateOfEnemy = EnemyModel.EnemyState.Idle, TypeOfEnemy = EnemyModel.TypeEnemy.Greatsword, Speed = 3});
-        //     enemies.Add(new EnemyModel() {Power = new Power(1,200, 50), InitPosition = position1, StateOfEnemy = EnemyModel.EnemyState.Idle, TypeOfEnemy = EnemyModel.TypeEnemy.Greatsword, Speed = 1});
-        //     enemies.Add(new EnemyModel() {Power = new Power(1,200, 50), InitPosition = position1, StateOfEnemy = EnemyModel.EnemyState.Idle, TypeOfEnemy = EnemyModel.TypeEnemy.Greatsword, Speed = 2});
-        //     enemies.Add(new EnemyModel() {Power = new Power(1,200, 50), InitPosition = position1, StateOfEnemy = EnemyModel.EnemyState.Idle, TypeOfEnemy = EnemyModel.TypeEnemy.Greatsword, Speed = 8});
-        //     enemies.Add(new EnemyModel() {Power = new Power(1,100, 50), InitPosition = position1, StateOfEnemy = EnemyModel.EnemyState.Idle, TypeOfEnemy = EnemyModel.TypeEnemy.Greatsword, Speed = 1});
-        //     enemies.Add(new EnemyModel() {Power = new Power(1,200, 50), InitPosition = position2, StateOfEnemy = EnemyModel.EnemyState.Idle, TypeOfEnemy = EnemyModel.TypeEnemy.Greatsword, Speed = 1});
-        //     enemies.Add(new EnemyModel() {Power = new Power(1,300, 50), InitPosition = position2, StateOfEnemy = EnemyModel.EnemyState.Idle, TypeOfEnemy = EnemyModel.TypeEnemy.Greatsword, Speed = 9});
-        //     enemies.Add(new EnemyModel() {Power = new Power(1,300, 50), InitPosition = position2, StateOfEnemy = EnemyModel.EnemyState.Idle, TypeOfEnemy = EnemyModel.TypeEnemy.Greatsword, Speed = 7});
-        //     enemies.Add(new EnemyModel() {Power = new Power(1,300, 50), InitPosition = position2, StateOfEnemy = EnemyModel.EnemyState.Idle, TypeOfEnemy = EnemyModel.TypeEnemy.Greatsword, Speed = 3});
-        //     enemies.Add(new EnemyModel() {Power = new Power(1,300, 50), InitPosition = position2, StateOfEnemy = EnemyModel.EnemyState.Idle, TypeOfEnemy = EnemyModel.TypeEnemy.Greatsword, Speed = 2});
-        //     enemies.Add(new EnemyModel() {Power = new Power(1,300, 50), InitPosition = position3, StateOfEnemy = EnemyModel.EnemyState.Idle, TypeOfEnemy = EnemyModel.TypeEnemy.Greatsword, Speed = 5});
-        //     enemies.Add(new EnemyModel() {Power = new Power(1,300, 50), InitPosition = position3, StateOfEnemy = EnemyModel.EnemyState.Idle, TypeOfEnemy = EnemyModel.TypeEnemy.Greatsword, Speed = 9});
-        //     enemies.Add(new EnemyModel() {Power = new Power(1,300, 50), InitPosition = position3, StateOfEnemy = EnemyModel.EnemyState.Idle, TypeOfEnemy = EnemyModel.TypeEnemy.Greatsword, Speed = 2});
-        //     enemies.Add(new EnemyModel() {Power = new Power(1,300, 50), InitPosition = position3, StateOfEnemy = EnemyModel.EnemyState.Idle, TypeOfEnemy = EnemyModel.TypeEnemy.Greatsword, Speed = 1}); 
-        //     enemies.Add(new EnemyModel() {Power = new Power(1,300, 50), InitPosition = position3, StateOfEnemy = EnemyModel.EnemyState.Idle, TypeOfEnemy = EnemyModel.TypeEnemy.Greatsword, Speed = 3});
-        //     enemies.Add(new EnemyModel() {Power = new Power(1,300, 50), InitPosition = position4, StateOfEnemy = EnemyModel.EnemyState.Idle, TypeOfEnemy = EnemyModel.TypeEnemy.Greatsword, Speed = 5});
-        //     enemies.Add(new EnemyModel() {Power = new Power(1,300, 50), InitPosition = position4, StateOfEnemy = EnemyModel.EnemyState.Idle, TypeOfEnemy = EnemyModel.TypeEnemy.Greatsword, Speed = 4});
-        //     enemies.Add(new EnemyModel() {Power = new Power(1,300, 50), InitPosition = position4, StateOfEnemy = EnemyModel.EnemyState.Idle, TypeOfEnemy = EnemyModel.TypeEnemy.Greatsword, Speed = 5});
-        //     enemies.Add(new EnemyModel() {Power = new Power(1,300, 50), InitPosition = position4, StateOfEnemy = EnemyModel.EnemyState.Idle, TypeOfEnemy = EnemyModel.TypeEnemy.Greatsword, Speed = 2}); 
-        //     enemies.Add(new EnemyModel() {Power = new Power(1,300, 50), InitPosition = position4, StateOfEnemy = EnemyModel.EnemyState.Idle, TypeOfEnemy = EnemyModel.TypeEnemy.Greatsword, Speed = 1});
-        //     return enemies;
-        // }
+        private Vector3 SetPosition(int turn)
+        {
+            var position = levelStart.localPosition - new Vector3(9, 0, 0);
+            switch (turn)
+            {
+                case 0: return position;
+                case 1: return turn1Init.position;
+                case 2: return turn2Init.position;
+                case 3: return turn3Init.position;
+                case 4: return levelEnd.position;
+                default: return position;
+            }
+        }
+
+        private List<EnemyModel> FakeListEnemy()
+        {
+            return new List<EnemyModel>
+            {
+                new EnemyModel("1", "Swords Man", 1,
+                    new Power() {Hp = 10, Mp = 10, AttackDamage = 1, SpeedAttack = 10, SpeedMovement = 5},
+                    new List<OutfitModel>(), CharacterStateEnum.Idle, new List<WeaponModel>(),
+                    EnemyModel.EnemyTypeEnum.Greatsword){Turn = 1},
+                new EnemyModel("2", "Swords Man", 1,
+                    new Power() {Hp = 10, Mp = 10, AttackDamage = 1, SpeedAttack = 10, SpeedMovement = 3},
+                    new List<OutfitModel>(), CharacterStateEnum.Idle, new List<WeaponModel>(),
+                    EnemyModel.EnemyTypeEnum.Greatsword){Turn = 0},
+
+            };
+        }
     }
 }

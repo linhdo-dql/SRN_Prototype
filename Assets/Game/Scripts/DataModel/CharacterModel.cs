@@ -10,9 +10,8 @@ namespace Game.Scripts.DataModel
         private Power _power;
         private List<OutfitModel> _outfits;
         private CharacterStateEnum _characterState;
-        private float _speed;
 
-        public CharacterModel(string id, string name, int level, Power power, List<OutfitModel> outfits, CharacterStateEnum characterState, float speed, List<WeaponModel> weapons)
+        public CharacterModel(string id, string name, int level, Power power, List<OutfitModel> outfits, CharacterStateEnum characterState, List<WeaponModel> weapons)
         {
             _id = id;
             _name = name;
@@ -20,14 +19,7 @@ namespace Game.Scripts.DataModel
             _power = power;
             _outfits = outfits;
             _characterState = characterState;
-            _speed = speed;
             _weapons = weapons;
-        }
-
-        public float Speed
-        {
-            get => _speed;
-            set => _speed = value;
         }
 
         public string ID

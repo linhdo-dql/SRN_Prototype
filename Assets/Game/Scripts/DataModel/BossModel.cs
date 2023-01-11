@@ -12,7 +12,7 @@ public class BossModel : CharacterModel
 
     private BossTypeEnum _bossType;
 
-    public BossModel(string id, string name, int level, Power power, List<OutfitModel> outfits, CharacterStateEnum characterState, float speed, List<WeaponModel> weapons, BossTypeEnum bossType) : base(id, name, level, power, outfits, characterState, speed, weapons)
+    public BossModel(string id, string name, int level, Power power, List<OutfitModel> outfits, CharacterStateEnum characterState, float speed, List<WeaponModel> weapons, BossTypeEnum bossType) : base(id, name, level, power, outfits, characterState, weapons)
     {
         _bossType = bossType;
     }

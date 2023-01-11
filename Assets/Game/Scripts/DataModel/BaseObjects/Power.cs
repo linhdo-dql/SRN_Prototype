@@ -10,17 +10,21 @@ namespace Game.Scripts.DataModel
 
         private float _mp;
         public float Mp { get; set; }
+        
+        private float _speedMovement;
+        public float SpeedMovement { get; set; }
+        
+        private float _speedAttack;
+        public float SpeedAttack { get; set; }
 
-        public Power(float attack, float hp, float mp)
+        public Power()
         {
-            this._attackDamage = attack;
-            this._hp = hp;
-            this._mp = mp;
+            
         }
         
         public Power UpgradePower(float factor)
         {
-            return new Power(factor * this._attackDamage, factor * this._hp, factor * this._mp);
+            return new Power() { Hp = factor * this._hp, Mp = factor * this._mp, AttackDamage = factor * this._attackDamage};
         }
     }
 }
