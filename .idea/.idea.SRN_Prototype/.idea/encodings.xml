@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding" addBOMForNewFiles="with BOM under Windows, with no BOM otherwise" />
+  <component name="Encoding" addBOMForNewFiles="with BOM under Windows, with no BOM otherwise">
+    <file url="file://$USER_HOME$/Downloads/AssetRipperExport638092033910823970/ExportedProject/Assets/Resources/levelsdata/Lvl_1401_Factory2.bytes" charset="US-ASCII" />
+  </component>
 </project>
