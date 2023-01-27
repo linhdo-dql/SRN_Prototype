@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a6b194f808b1af6499c93410e504af42, type: 3}
-  m_Name: char_boss-Export layers_Atlas
+  m_Name: MaceBoss_Atlas
   m_EditorClassIdentifier: 
-  atlasFile: {fileID: 4900000, guid: a5ca0e6da771e42a0bf2838fd15e57c8, type: 3}
+  atlasFile: {fileID: 4900000, guid: 203701d7b85764313a5fd9c2668b705f, type: 3}
   materials:
-  - {fileID: 2100000, guid: f71076a571c114aa3b6415f68e8fad1b, type: 2}
+  - {fileID: 2100000, guid: eb6a830ee973a4d9696b27351b2ebc35, type: 2}
