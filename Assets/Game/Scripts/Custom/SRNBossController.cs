@@ -1,6 +1,5 @@
 using Spine;
 using Spine.Unity;
-using Spine.Unity.Examples;
 using UnityEngine;
 
 public class SRNBossController : MonoBehaviour

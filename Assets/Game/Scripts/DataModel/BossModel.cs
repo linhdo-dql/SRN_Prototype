@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using Game.Scripts.DataModel;
-using MoreMountains.CorgiEngine;
 
 public class BossModel : CharacterModel
 {

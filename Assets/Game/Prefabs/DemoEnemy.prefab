@@ -25,8 +25,8 @@ GameObject:
   - component: {fileID: 3304550947411667548}
   - component: {fileID: 4920307319672725928}
   - component: {fileID: 7396862536746625998}
-  - component: {fileID: -7291343359143087240}
   - component: {fileID: 3363199471692024161}
+  - component: {fileID: 1231726759784565972}
   m_Layer: 13
   m_Name: DemoEnemy
   m_TagString: Untagged
@@ -558,33 +558,6 @@ MonoBehaviour:
   HitNonDamageableFeedback: {fileID: 0}
   FreezeFramesOnHitDuration: 0
   Owner: {fileID: 0}
---- !u!114 &-7291343359143087240
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7442508650278799710}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed782cf6d45978347bcea1b2ec201483, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  WalkBehaviour: 1
-  ChangeDirectionOnWall: 1
-  AvoidFalling: 0
-  HoleDetectionOffset: {x: 0, y: 0, z: 0}
-  HoleDetectionRaycastLength: 0
-  ViewDistance: 30
-  StopDistance: 0
-  MoveOnSightRayOffset: {x: -1, y: 1.5, z: 0}
-  MoveOnSightLayer:
-    serializedVersion: 2
-    m_Bits: 512
-  MoveOnSightObstaclesLayer:
-    serializedVersion: 2
-    m_Bits: 264448
-  ResetPositionOnDeath: 1
 --- !u!114 &3363199471692024161
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -598,3 +571,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyAnimator: {fileID: 1459129496058815035}
+--- !u!114 &1231726759784565972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7442508650278799710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ee7b5e36685e2445a0097de42940987, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attachOnStart: 1
+  overrideAnimation: 1
+  sprite: {fileID: 21300002, guid: 66e56e4315aaabd49b38cfec8a9dddf5, type: 3}
+  slot: arm_s1

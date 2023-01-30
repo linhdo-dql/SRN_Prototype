@@ -4925,6 +4925,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3770035165071208193}
   - component: {fileID: 1752396854210275060}
+  - component: {fileID: 5539906213736202280}
   m_Layer: 0
   m_Name: HealthBar
   m_TagString: Untagged
@@ -5190,6 +5191,14 @@ MonoBehaviour:
   BarTarget: 0
   DelayedBarIncreasingProgress: 0
   DelayedBarDecreasingProgress: 0
+--- !u!222 &5539906213736202280
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4146394878641696259}
+  m_CullTransparentMesh: 1
 --- !u!1 &5300531470204472490
 GameObject:
   m_ObjectHideFlags: 0

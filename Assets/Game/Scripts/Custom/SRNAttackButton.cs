@@ -1,9 +1,6 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
 using MoreMountains.CorgiEngine;
-using MoreMountains.Tools;
-using Spine.Unity;
 using UnityEngine;
 
 public class SRNAttackButton : MonoBehaviour
