@@ -1,0 +1,44 @@
+Enemies.png
+size:2020,1234
+filter:Linear,Linear
+pma:true
+body
+bounds:1352,55,352,419
+rotate:90
+chan phai
+bounds:1035,409,334,823
+chan_trai
+bounds:1371,453,395,779
+dau
+bounds:2,29,213,280
+offsets:1,1,215,282
+rotate:90
+eyes02
+bounds:284,7,123,47
+offsets:1,1,125,49
+hand_L
+bounds:284,56,186,136
+rotate:90
+hat
+bounds:620,2,345,322
+offsets:1,1,347,324
+head02
+bounds:1773,934,245,298
+offsets:1,1,247,300
+neck
+bounds:422,60,182,161
+offsets:0,0,183,161
+rotate:90
+sword
+bounds:620,326,906,413
+offsets:1,1,908,415
+rotate:90
+tay _trai
+bounds:967,3,321,383
+rotate:90
+tay phai
+bounds:1773,340,242,592
+thuong
+bounds:2,244,988,616
+offsets:1,1,990,618
+rotate:90

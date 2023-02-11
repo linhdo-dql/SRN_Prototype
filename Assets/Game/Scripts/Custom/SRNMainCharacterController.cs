@@ -9,6 +9,9 @@ public class SRNMainCharacterController : MonoBehaviour
     [SerializeField] private SkeletonMecanim _mecanim;
     private bool isAttacking = true;
     private CapsuleCollider2D _capsuleCollider2D;
+
+    private static readonly int Death = Animator.StringToHash("Death");
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,20 +21,22 @@ public class SRNMainCharacterController : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("EnemyWeapon") && isAttacking)
+        if (other.CompareTag("EnemyWeapon"))
         {
-            isAttacking = false;
-            print("Bi danh");
+            Character enemy = other.GetComponent<SRNEnemyWeapon>().enemyCharacter;
+            if(enemy.CharacterAnimator.GetBool(Death)) return;
+            if (enemy.CharacterBrain.CurrentState.StateName
+                .Equals("Shoot"))
+            {
+                StartCoroutine(MainAttacked(other.GetComponent<SRNEnemyWeapon>().DamageBase,0.6667f));
+            }
            
-            LevelManager.Instance.Players[0].CharacterHealth.Damage(1f,gameObject,0.5f,0.5f,Vector2.up);
-            
-            StartCoroutine(ResetAttackedState(1f));
         }
     }
 
-    private IEnumerator ResetAttackedState(float time)
+    private IEnumerator MainAttacked(float damage, float time)
     {
         yield return new WaitForSeconds(time);
-        isAttacking = true;
+        LevelManager.Instance.Players[0].CharacterHealth.Damage(damage,gameObject,0.5f,0.5f,Vector2.up);
     }
 }

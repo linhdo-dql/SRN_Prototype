@@ -1,0 +1,56 @@
+Enemies03.png
+size:1825,1079
+filter:Linear,Linear
+pma:true
+armor_L
+bounds:1021,28,273,375
+offsets:0,0,274,375
+rotate:90
+armor_M
+bounds:1637,29,173,331
+armor_R
+bounds:1398,7,237,341
+armor_body
+bounds:1217,350,186,344
+rotate:90
+armor_hand_R
+bounds:596,2,294,208
+rotate:90
+body
+bounds:735,502,352,419
+chan phai
+bounds:2,254,334,823
+chan_trai
+bounds:338,298,395,779
+dau
+bounds:806,21,213,280
+offsets:1,1,215,282
+finger
+bounds:1412,791,118,130
+offsets:1,1,120,132
+hand_L
+bounds:1637,785,186,136
+hat03
+bounds:1412,543,119,240
+hat03_L
+bounds:735,303,366,197
+offsets:2,1,369,199
+hat03_R
+bounds:1533,546,183,237
+offsets:0,0,185,237
+neck
+bounds:1563,362,182,161
+offsets:0,0,183,161
+rotate:90
+sung
+bounds:735,923,1079,154
+offsets:1,1,1081,156
+tay _trai
+bounds:1089,538,321,383
+tay phai
+bounds:2,10,242,592
+rotate:90
+that lung
+bounds:1103,306,230,112
+offsets:1,1,232,114
+rotate:90

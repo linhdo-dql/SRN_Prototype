@@ -57,6 +57,8 @@ public class SRNAttackButton : MonoBehaviour
     public void SetStartJumpAttackSkill()
     {
        _startJumpAttackSkill = DateTime.Now;
+        _mainCharacter.CharacterAnimator.SetBool("Jumping", true);
+        print("Nhay vao day");
         _mainCharacter.CharacterAnimator.SetBool("JumpAtk", false);
     } 
 }
